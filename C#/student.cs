@@ -7,5 +7,7 @@ namespace baitapanhlong.C_
 {
     class student
     {
+        public string Name;
+
     }
 }
