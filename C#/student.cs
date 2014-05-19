@@ -7,7 +7,13 @@ namespace baitapanhlong.C_
 {
     class student
     {
-        public string Name;
+        private string name;
+        public string Name
+        {
+            get {return "sinh viên"+this.name; }
+            set { name = value; }
+        }
+
 
     }
 }
