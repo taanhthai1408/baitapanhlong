@@ -20,8 +20,8 @@ namespace baitapanhlong
         private void Form1_Load(object sender, EventArgs e)
         {
             student sv = new student();
-            sv.Name = "ta anh thai";
-            MessageBox.Show(sv.Name);
+            sv.PASSWORD = "ta anh thai";
+            MessageBox.Show(sv.PASSWORD);
         }
     }
 }
