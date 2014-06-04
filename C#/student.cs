@@ -9,23 +9,38 @@ namespace baitapanhlong.C_
     class student
     {
         private string name;
-        public string Name
+        public string mName
         {
             get {return "sinh viên "+this.name; }
             set { name = value; }
         }
-
-        private string password;
-        public string PASSWORD
+        private int tuoi;
+        public string mTuoi
         {
-            get { return password; }
-            set 
-            {
-                HashAlgorithm hassword = new MD5CryptoServiceProvider();
-                byte[] hassbyte = hassword.ComputeHash(Encoding.UTF8.GetBytes(value));
-                password = Convert.ToBase64String(hassbyte);
-            }
+            get { return tuoi.ToString()+" Tuổi"; }
+            set { tuoi = int.Parse(value); }
         }
+        private string khoa;
+        public string mkhoa
+        {
+            get { return "khoa " + khoa; }
+            set { khoa = value;}
+        }
+        private string truong;
+        public string mtruong
+        {
+            get { return "trường " + truong; }
+            set { truong = value; }
+        }
+        private int mssv;
+        public string mmssv
+        {
+            get { return "MSSV " + mssv.ToString(); }
+            set { mssv =int.Parse( value); }
+        }
+           
+
+       
 
     }
 }
